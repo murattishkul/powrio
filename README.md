@@ -1,3 +1,3 @@
-# POwr Take Home Assignment
+# POWr Take Home Assignment
 
 ### You can access it here https://murattishkul.netlify.com/
