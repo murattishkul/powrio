@@ -1,35 +1,41 @@
 import React from 'react'
+import '../App.css';
 
 class BuildJson extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            input: {}
+            input: ' '
         }
+        this.buildJson = this.buildJson.bind(this)
     }
 
     buildJson(){
-        const {input} = this.state
+        let {input} = this.state
         if(input){
+            input = JSON.parse(input)
             this.props.buildJson(input)
-            this.setState({input: {} })
+            //this.setState({input: ' ' })
         }
     }
+
     handleEnter = event => {
         if (event.key === 'Enter') this.buildJson();
     }
+
     inputChange = event => {
         this.setState({input : event.target.value})
     }
+    
     render(){
         const {input} = this.state
         return(
-            <div>
-                <input
+            <div className='build-json'>
+                <textarea rows='3'
                     onKeyPress={this.handleEnter}
                     onChange={this.inputChange}
                     value={input}>
-                </input>
+                </textarea>
                 <button onClick={this.buildJson}>Build</button>
             </div>
         )

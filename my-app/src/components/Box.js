@@ -1,10 +1,7 @@
 import React from 'react';
 
-function Box(){
+export default function Box(props){
     return (
-      <div style={{border: 'solid', color:'orange', width: '10px', height: '10px'}}>
-      </div>
+      <div style={{border: 'solid', color: 'white', backgroundColor: props.color, opacity: '0.7', width: '70px', height: '70px'}}></div>
     );
 };
-
-export default Box;

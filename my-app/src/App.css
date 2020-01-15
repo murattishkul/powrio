@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box
+}
+button {
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    font-weight: bold;
+    height: fit-content;
+    margin: 0 5px;
+    background: #fff;
+}
+textarea {
+    background: #fff;
+    padding: .5rem 2rem;
+    border: 1px solid black;
+    resize: none;
+    width: 50%;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.main-section {
+    width: 100%;
+    padding: 30px;
+}
+
+h3{
+    font-family: Verdana;
+    text-align: right;
+    margin-bottom: 3rem;
+}
+h1 {
+    font-family: Verdana;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.app-container {
+    display: flex;
+    align-items: center;
+}
+.wrap-of-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 10px
+}
+
+.hoverable-buttons {
+    display: flex;
+    position: relative;
+    width: fit-content
+}
+
+.show-buttons {
+    position: absolute;
+    display: none;
+    top: -30px;
+    left: -60px;
+}
+
+.hoverable-buttons:hover .show-buttons {
+    display: flex;
+}
+
+
+.build-json {
+    margin: 70px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.create-json {
+    display: flex;
+    align-items: center
+}
+.label-for-json{
+    background: #fff;
+    padding: .5rem 2rem;
+    border: 1px solid black;
+    resize: none;
+    width: 50%;
+    font-weight: bold;
+    margin-right: 1rem;
+    min-height: 3rem;
+    width: 100%;
+    text-align: center;
+}
+img {
+    height: 3rem;
+    width: 10rem;
+}
