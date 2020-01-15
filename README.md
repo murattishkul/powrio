@@ -1,3 +1,3 @@
-# powrio
+# POwr Take Home Assignment
 
-### You can access by clicking https://murattishkul.netlify.com/
+### You can access it here https://murattishkul.netlify.com/
